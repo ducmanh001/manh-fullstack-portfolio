@@ -96,7 +96,7 @@
           <div class="stat-card">
             <div class="stat-body">
               <strong class="stat-num">1-2s</strong>
-              <span class="stat-label">Aggregation across 300M+ records</span>
+              <span class="stat-label">Typical query (300M+ row benchmark)</span>
             </div>
             <span class="stat-index">02</span>
           </div>
@@ -408,7 +408,7 @@
           </div>
           <div class="highlight-row">
             <strong>300M+</strong>
-            <span>survey records analyzed per query, consistent 1-2s aggregation (was frequent timeouts)</span>
+            <span>row production-data copy benchmarked; typical aggregations complete in 1-2s (was frequent timeouts)</span>
           </div>
           <div class="highlight-row">
             <strong>100K+</strong>
@@ -516,6 +516,18 @@
           <li>NestJS modular-monolith core API powering a Next.js web client and a Vite/React admin console, both frontends sharing a single typed REST client generated from the OpenAPI spec.</li>
           <li>Built the voice-match call flow end-to-end: a REST join mints a LiveKit token per match session, a React hook connects the room client-side guarded by a generation counter against stale reconnects, and Socket.IO delivers real-time call-ended events with REST poll as fallback.</li>
         </ul>
+        <div class="flow-diagram" role="img" aria-label="Voice-match call flow: REST join mints a LiveKit token, React hook connects the room, Socket.IO delivers call-ended events, with REST poll as fallback">
+          <span class="flow-step"><i>1</i>REST join</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step"><i>2</i>Mint LiveKit token</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step"><i>3</i>React hook connects room</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step"><i>4</i>Socket.IO call-ended event</span>
+          <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+          <span class="flow-step"><i>5</i>REST poll (fallback)</span>
+          <span class="flow-caption">voice_match_call.flow &mdash; a generation counter guards the hook against stale reconnects</span>
+        </div>
         <div class="tech-tags">
           <span>NestJS</span><span>Next.js</span><span>Vite/React</span><span>Socket.IO</span><span>LiveKit</span><span>Tailwind CSS</span>
         </div>
@@ -542,11 +554,11 @@
           checkout, orders, reviews, and admin management.
         </p>
         <ul class="bullet-list">
-          <li>PostgreSQL/TypeORM migrations with Bull-queued email notifications; deployed to Railway with Docker and CI.</li>
+          <li>PostgreSQL/TypeORM migrations with BullMQ-queued email notifications; deployed to Railway with Docker and CI.</li>
           <li>Implemented transactional checkout with ordered row locks to reduce deadlock risk and idempotency keys to prevent duplicate order creation on retries.</li>
         </ul>
         <div class="tech-tags">
-          <span>NestJS</span><span>TypeORM</span><span>PostgreSQL</span><span>Bull</span><span>Railway</span>
+          <span>NestJS</span><span>TypeORM</span><span>PostgreSQL</span><span>BullMQ</span><span>Railway</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/ducmanh001/mini-shop-api" target="_blank" rel="noopener">
@@ -634,7 +646,7 @@
           <span><i class="field-num">03</i>YOUR MESSAGE</span>
           <textarea name="message" rows="5" placeholder="// Tell me about your project..." required></textarea>
         </label>
-        <button class="btn btn-primary btn-block" type="submit">Send Message <span aria-hidden="true">&rarr;</span></button>
+        <button class="btn btn-primary btn-block" type="submit">Open Email Draft <span aria-hidden="true">&rarr;</span></button>
         <p class="form-hint">Opens your email app with this message pre-filled &mdash; no server involved.</p>
       </form>
     </div>
