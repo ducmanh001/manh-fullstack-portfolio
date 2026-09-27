@@ -73,9 +73,10 @@
           </div>
 
           <p class="hero-desc">
-            Building full-stack products with 3+ years of experience &mdash; Node.js/NestJS
-            services and React/Next.js applications, from real-time features to admin
-            consoles, end to end.
+            Building full-stack products with 3+ years of experience &mdash; NestJS APIs and
+            React/Next.js interfaces. Built a real-time voice-call app and admin console around
+            a shared OpenAPI-generated client, and redesigned an analytics pipeline over 300M+
+            survey records for consistent 1-2s aggregations.
           </p>
 
           <div class="hero-actions">
@@ -94,8 +95,8 @@
           </div>
           <div class="stat-card">
             <div class="stat-body">
-              <strong class="stat-num">10x</strong>
-              <span class="stat-label">Faster search response</span>
+              <strong class="stat-num">1-2s</strong>
+              <span class="stat-label">Aggregation across 300M+ records</span>
             </div>
             <span class="stat-index">02</span>
           </div>
@@ -211,9 +212,10 @@
       <div class="card bio-card">
         <p>
           I'm a Full-Stack Software Engineer with over <strong>3 years of experience</strong>
-          building Node.js/NestJS services and React/Next.js applications. I've cut search
-          response times by over 10x, reduced a key API query from ~600ms to ~40ms, and built
-          a real-time web app and admin console end to end.
+          building NestJS APIs and React/Next.js interfaces. I've built a real-time voice-call
+          app and admin console around a shared OpenAPI-generated client, redesigned an
+          analytics pipeline over 300M+ survey records for consistent 1-2s aggregations, and
+          cut a clinic-classification query from ~600ms to ~40ms.
         </p>
         <p>
           At Sun Asterisk, I use an internal AI-Driven Development (AI-DD) workflow to audit
@@ -326,6 +328,8 @@
         </div>
         <div class="tag-list">
           <span class="tag">PostgreSQL</span>
+          <span class="tag">ClickHouse</span>
+          <span class="tag">OpenSearch</span>
           <span class="tag">MongoDB</span>
           <span class="tag">Redis</span>
           <span class="tag">Prisma</span>
@@ -339,7 +343,7 @@
           <h3>Messaging, APIs &amp; Realtime</h3>
         </div>
         <div class="tag-list">
-          <span class="tag">RabbitMQ</span>
+          <span class="tag">BullMQ</span>
           <span class="tag">Kafka</span>
           <span class="tag">REST</span>
           <span class="tag">gRPC</span>
@@ -384,10 +388,10 @@
           <li><i>02</i>Test-Driven Development (TDD)</li>
           <li><i>03</i>AI-Driven Development (AI-DD)</li>
           <li><i>04</i>Clean / Layered Architecture</li>
-          <li><i>05</i>Domain-Driven Design (DDD)</li>
-          <li><i>06</i>CQRS</li>
-          <li><i>07</i>Event-driven Design</li>
-          <li><i>08</i>Microservices</li>
+          <li><i>05</i>Modular Monolith</li>
+          <li><i>06</i>Domain-Driven Design (DDD)</li>
+          <li><i>07</i>CQRS</li>
+          <li><i>08</i>Event-driven Design</li>
         </ul>
       </div>
 
@@ -403,8 +407,8 @@
             <span>clinic classification query time after partitioning</span>
           </div>
           <div class="highlight-row">
-            <strong>~10s &rarr; 1-2s</strong>
-            <span>respondent-analytics aggregation after OpenSearch &rarr; ClickHouse migration (validated on 2M+ responses)</span>
+            <strong>300M+</strong>
+            <span>survey records analyzed per query, consistent 1-2s aggregation (was frequent timeouts)</span>
           </div>
           <div class="highlight-row">
             <strong>100K+</strong>
@@ -455,7 +459,7 @@
           <span class="tag tag-accent">AI-DD</span>
         </div>
         <ul class="bullet-list">
-          <li>Migrated the respondent-analytics module from document-oriented OpenSearch to a columnar ClickHouse OLAP schema; validated on a full production data copy (2M+ responses), cutting aggregation from ~10s to 1-2s.</li>
+          <li>Replaced OpenSearch parent-child aggregation queries on a single unpartitioned index with a ClickHouse columnar table partitioned by year, validated against a 300M+ row production copy spanning 50+ years of survey data &mdash; eliminating recurring query timeouts and cutting typical aggregation latency to a consistent 1-2s.</li>
           <li>Added source-commit traceability so every AI-generated design document is verified against its origin before reaching developers, catching unsupported content before it causes downstream rework.</li>
         </ul>
         <div class="tech-tags">
@@ -470,8 +474,9 @@
         <h3 class="exp-role">Full-Stack Software Engineer</h3>
         <span class="exp-company"><svg viewBox="0 0 24 24" class="row-ico-sm"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Fenik Technologies</span>
         <p class="exp-desc">
-          Developed backend services for a dental-clinic discovery and review platform serving
-          100,000+ monthly visits, with a focus on search performance and query optimization.
+          Developed and maintained features for a dental-clinic discovery and review platform
+          serving 100,000+ monthly visits, with a focus on search performance and query
+          optimization.
         </p>
         <div class="tag-list tag-list-sm">
           <span class="tag tag-accent">Dental Platform</span>
@@ -508,8 +513,8 @@
           20+ modules.
         </p>
         <ul class="bullet-list">
-          <li>NestJS modular-monolith core API (Socket.IO gateway, LiveKit SFU) powering both a Next.js web client and a Vite/React admin console.</li>
-          <li>Built both frontends &mdash; a Next.js App Router web client (Server Components by default, TanStack Query, socket.io-client, livekit-client) and a Vite/React admin SPA (React Router, React Hook Form + Zod, shadcn/ui, Tailwind CSS) &mdash; both consuming a single typed REST client generated from the OpenAPI spec.</li>
+          <li>NestJS modular-monolith core API powering a Next.js web client and a Vite/React admin console, both frontends sharing a single typed REST client generated from the OpenAPI spec.</li>
+          <li>Built the voice-match call flow end-to-end: a REST join mints a LiveKit token per match session, a React hook connects the room client-side guarded by a generation counter against stale reconnects, and Socket.IO delivers real-time call-ended events with REST poll as fallback.</li>
         </ul>
         <div class="tech-tags">
           <span>NestJS</span><span>Next.js</span><span>Vite/React</span><span>Socket.IO</span><span>LiveKit</span><span>Tailwind CSS</span>
