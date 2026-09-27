@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phan Van Manh — Full-Stack Developer</title>
+<meta name="description" content="Phan Van Manh — Full-Stack Software Engineer specializing in React, Next.js, Node.js, NestJS and end-to-end product development." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-glow bg-glow-cyan" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-blue" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="nav-wrap container">
+    <a class="brand" href="#top" aria-label="Phan Van Manh — home">
+      <span class="brand-avatar">M<i class="brand-dot"></i></span>
+      <span class="brand-text">
+        <span class="brand-kicker">PORTFOLIO</span>
+        <span class="brand-name">Phan Van Manh</span>
+      </span>
+    </a>
+
+    <nav class="nav-pill" id="primary-nav" aria-label="Primary">
+      <a href="#home" data-nav="home"><i>01</i>Home</a>
+      <a href="#about" data-nav="about"><i>02</i>About</a>
+      <a href="#skills" data-nav="skills"><i>03</i>Skills</a>
+      <a href="#experience" data-nav="experience"><i>04</i>Experience</a>
+      <a href="#projects" data-nav="projects"><i>05</i>Projects</a>
+      <a href="#education" data-nav="education"><i>06</i>Education</a>
+      <a href="#contact" data-nav="contact"><i>07</i>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" class="icon-sun"><path d="M12 4V2M12 22v-2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M5 19l-1.4 1.4M20.4 3.6 19 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="#contact">Hire Me</a>
+    </div>
+
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero container" id="home">
+    <div class="hero-top-row">
+      <span class="badge badge-live"><i class="dot dot-green"></i>Available for opportunities</span>
+      <span class="scroll-hint">Scroll to explore <span aria-hidden="true">&darr;</span></span>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1 class="hero-name">Phan Van Manh</h1>
+          <h2 class="hero-role">Full-Stack Dev</h2>
+
+          <div class="pill-row">
+            <span class="pill pill-accent"><i class="dot dot-green"></i>Full-Stack</span>
+            <span class="pill">React</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">NestJS</span>
+          </div>
+
+          <p class="hero-desc">
+            Building full-stack products with 3+ years of experience &mdash; Node.js/NestJS
+            services and React/Next.js applications, from real-time features to admin
+            consoles, end to end.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-ghost" href="#contact"><svg class="btn-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-body">
+              <strong class="stat-num">3+</strong>
+              <span class="stat-label">Years of experience</span>
+            </div>
+            <span class="stat-index">01</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-body">
+              <strong class="stat-num">10x</strong>
+              <span class="stat-label">Faster search response</span>
+            </div>
+            <span class="stat-index">02</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-body">
+              <strong class="stat-num">~600ms &rarr; ~40ms</strong>
+              <span class="stat-label">Key API query optimized</span>
+            </div>
+            <span class="stat-index">03</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-info-row">
+        <div class="info-card info-cv">
+          <span class="mini-label">RESUME &middot; CV</span>
+          <div class="info-cv-row">
+            <div>
+              <strong>Download CV</strong>
+              <span class="info-sub">PDF &middot; 1 page &middot; 2026</span>
+            </div>
+            <a class="icon-btn" href="assets/cv/Phan_Van_Manh_CV_Fullstack.pdf" download aria-label="Download CV">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="mini-label">CORE STACK</span>
+          <div class="stack-icons">
+            <span class="stack-ico" title="React">Re</span>
+            <span class="stack-ico" title="Next.js">Nx</span>
+            <span class="stack-ico" title="NestJS">Ne</span>
+            <span class="stack-ico" title="TypeScript">TS</span>
+            <span class="stack-ico" title="PostgreSQL">Pg</span>
+          </div>
+          <span class="info-sub">Production-grade stack</span>
+        </div>
+
+        <div class="info-card">
+          <span class="mini-label">DEPLOYS TO</span>
+          <div class="stack-icons">
+            <span class="stack-ico stack-ico-fill">DO</span>
+            <span class="stack-ico stack-ico-fill">CI</span>
+          </div>
+          <span class="info-sub">Docker &middot; DigitalOcean</span>
+        </div>
+
+        <div class="info-card">
+          <span class="mini-label">NOW</span>
+          <strong>Backend Engineer @ Sun*</strong>
+          <span class="info-sub"><i class="dot dot-green"></i>Since 07/2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>React</span><i>&#10022;</i><span>Next.js</span><i>&#10022;</i><span>TanStack Query</span><i>&#10022;</i>
+        <span>Zustand</span><i>&#10022;</i><span>Socket.IO</span><i>&#10022;</i><span>WebRTC</span><i>&#10022;</i>
+        <span>NestJS</span><i>&#10022;</i><span>TypeScript</span><i>&#10022;</i><span>PostgreSQL</span><i>&#10022;</i>
+        <span>Docker</span><i>&#10022;</i><span>CI/CD</span><i>&#10022;</i>
+        <span>React</span><i>&#10022;</i><span>Next.js</span><i>&#10022;</i><span>TanStack Query</span><i>&#10022;</i>
+        <span>Zustand</span><i>&#10022;</i><span>Socket.IO</span><i>&#10022;</i><span>WebRTC</span><i>&#10022;</i>
+        <span>NestJS</span><i>&#10022;</i><span>TypeScript</span><i>&#10022;</i><span>PostgreSQL</span><i>&#10022;</i>
+        <span>Docker</span><i>&#10022;</i><span>CI/CD</span><i>&#10022;</i>
+      </div>
+    </div>
+
+    <div class="keep-scrolling">
+      <span>KEEP SCROLLING</span>
+      <a href="#about" aria-label="Scroll to about section" class="scroll-arrow"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section container" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-sub">Passionate Full-Stack Engineer</p>
+
+    <div class="about-grid">
+      <div class="card profile-card">
+        <div class="profile-head">
+          <span class="profile-avatar">M<i class="avatar-dot"></i></span>
+          <div>
+            <strong class="profile-name">Phan Van Manh</strong>
+            <span class="profile-role">Full-Stack Software Engineer</span>
+            <span class="profile-loc">Ha Noi, Vietnam</span>
+          </div>
+        </div>
+        <div class="profile-rows">
+          <a class="profile-row" href="mailto:manhphan110801@gmail.com">
+            <span class="row-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            manhphan110801@gmail.com
+          </a>
+          <a class="profile-row" href="tel:+84845012095">
+            <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            0845 012 095
+          </a>
+        </div>
+        <div class="social-row">
+          <a class="social-chip" href="https://www.linkedin.com/in/phan-manh-34a107269/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z" fill="currentColor"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg>
+            LinkedIn
+          </a>
+          <a class="social-chip" href="https://github.com/ducmanh001" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9a4.8 4.8 0 0 0-1 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8 19c-3 .9-3-1.5-4.2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card bio-card">
+        <p>
+          I'm a Full-Stack Software Engineer with over <strong>3 years of experience</strong>
+          building Node.js/NestJS services and React/Next.js applications. I've cut search
+          response times by over 10x, reduced a key API query from ~600ms to ~40ms, and built
+          a real-time web app and admin console end to end.
+        </p>
+        <p>
+          At Sun Asterisk, I use an internal AI-Driven Development (AI-DD) workflow to audit
+          AI-generated design documents before they reach developers, alongside hands-on work in
+          Clean/Layered Architecture, DDD, CQRS, and event-driven design.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <strong>3+</strong>
+            <span>YEARS EXPERIENCE</span>
+          </div>
+          <div class="stat-box">
+            <strong>2</strong>
+            <span>PROJECTS</span>
+            <a href="#projects" class="stat-view">VIEW <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="stat-box">
+            <strong>2</strong>
+            <span>COMPANIES</span>
+          </div>
+        </div>
+
+        <div class="quick-facts">
+          <div class="quick-facts-head">
+            <span>QUICK FACTS</span>
+            <span class="quick-facts-tag">at_a_glance</span>
+          </div>
+          <div class="quick-facts-grid">
+            <div><span>LOCATION</span><strong>Ha Noi, Vietnam</strong></div>
+            <div><span>LANGUAGES</span><strong>Vietnamese &middot; English</strong></div>
+            <div><span>WORKING SINCE</span><strong>May 2023</strong></div>
+            <div><span>FOCUS</span><strong>Full-Stack &middot; Product</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section container" id="skills">
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <p class="section-sub">Technologies I work with</p>
+
+    <div class="skills-grid">
+      <article class="card skill-card">
+        <div class="skill-top bar-cyan">
+          <span class="skill-index">01</span>
+          <h3>Programming Languages</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag"><i class="tag-ico">JS</i>JavaScript</span>
+          <span class="tag"><i class="tag-ico">TS</i>TypeScript</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-cyan">
+          <span class="skill-index">02</span>
+          <h3>Frontend Frameworks</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">React</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">React Router</span>
+          <span class="tag">Vite</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-cyan">
+          <span class="skill-index">03</span>
+          <h3>Frontend State &amp; Forms</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">TanStack Query</span>
+          <span class="tag">Zustand</span>
+          <span class="tag">React Hook Form</span>
+          <span class="tag">Zod</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-teal">
+          <span class="skill-index">04</span>
+          <h3>UI &amp; Styling</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Ant Design</span>
+          <span class="tag">shadcn/ui</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-cyan">
+          <span class="skill-index">05</span>
+          <h3>Backend Frameworks</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Node.js</span>
+          <span class="tag">NestJS</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-cyan">
+          <span class="skill-index">06</span>
+          <h3>Databases &amp; ORMs</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Prisma</span>
+          <span class="tag">TypeORM</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-warm">
+          <span class="skill-index">07</span>
+          <h3>Messaging, APIs &amp; Realtime</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">RabbitMQ</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">REST</span>
+          <span class="tag">gRPC</span>
+          <span class="tag">WebSocket</span>
+          <span class="tag">Socket.IO</span>
+          <span class="tag">WebRTC (LiveKit)</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-teal">
+          <span class="skill-index">08</span>
+          <h3>Testing &amp; Quality</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Jest</span>
+          <span class="tag">Supertest</span>
+          <span class="tag">Cypress</span>
+          <span class="tag">Playwright</span>
+        </div>
+      </article>
+
+      <article class="card skill-card">
+        <div class="skill-top bar-warm">
+          <span class="skill-index">09</span>
+          <h3>Delivery &amp; DevOps</h3>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Docker</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">DigitalOcean</span>
+          <span class="tag">Git</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="skills-grid skills-grid-row2">
+      <div class="card soft-card">
+        <h3>Methodologies</h3>
+        <ul class="check-list">
+          <li><i>01</i>Agile / Scrum</li>
+          <li><i>02</i>Test-Driven Development (TDD)</li>
+          <li><i>03</i>AI-Driven Development (AI-DD)</li>
+          <li><i>04</i>Clean / Layered Architecture</li>
+          <li><i>05</i>Domain-Driven Design (DDD)</li>
+          <li><i>06</i>CQRS</li>
+          <li><i>07</i>Event-driven Design</li>
+          <li><i>08</i>Microservices</li>
+        </ul>
+      </div>
+
+      <div class="card highlight-card">
+        <h3>Quantified Impact</h3>
+        <div class="highlight-list">
+          <div class="highlight-row">
+            <strong>10x</strong>
+            <span>faster full-text search via PostgreSQL tsvector + GIN</span>
+          </div>
+          <div class="highlight-row">
+            <strong>~600ms &rarr; ~40ms</strong>
+            <span>clinic classification query time after partitioning</span>
+          </div>
+          <div class="highlight-row">
+            <strong>~10s &rarr; 1-2s</strong>
+            <span>respondent-analytics aggregation after OpenSearch &rarr; ClickHouse migration (validated on 2M+ responses)</span>
+          </div>
+          <div class="highlight-row">
+            <strong>100K+</strong>
+            <span>monthly visits served on production platform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card other-card">
+        <h3>Other Skills</h3>
+        <ul class="check-list">
+          <li><i>01</i>System &amp; API design</li>
+          <li><i>02</i>Query &amp; index optimization</li>
+          <li><i>03</i>Typed REST clients generated from OpenAPI specs</li>
+          <li><i>04</i>Real-time features (Socket.IO, LiveKit/WebRTC)</li>
+          <li><i>05</i>AI tools (ChatGPT, Cursor) for coding &amp; docs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section container" id="experience">
+    <div class="section-head-row">
+      <div>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-sub">My professional journey</p>
+      </div>
+      <span class="section-meta">2 ROLES &middot; 2 COMPANIES</span>
+    </div>
+
+    <div class="experience-grid">
+      <article class="card exp-card exp-card-current">
+        <div class="exp-top">
+          <span class="date-pill">07/2025 &ndash; Present</span>
+          <span class="badge badge-current"><i class="dot dot-green"></i>Current</span>
+        </div>
+        <h3 class="exp-role">Backend Software Engineer</h3>
+        <span class="exp-company"><svg viewBox="0 0 24 24" class="row-ico-sm"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Sun Asterisk</span>
+        <p class="exp-desc">
+          Proposed and led a rebuild of the respondent-analytics module for a Japanese client,
+          migrating OpenSearch to ClickHouse, and adapted an internal AI-assisted delivery workflow
+          (AI-DD) to verify AI-generated design documents before they reach developers.
+        </p>
+        <div class="tag-list tag-list-sm">
+          <span class="tag tag-accent">Respondent Analytics</span>
+          <span class="tag tag-accent">ClickHouse Migration</span>
+          <span class="tag tag-accent">AI-DD</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Migrated the respondent-analytics module from document-oriented OpenSearch to a columnar ClickHouse OLAP schema; validated on a full production data copy (2M+ responses), cutting aggregation from ~10s to 1-2s.</li>
+          <li>Added source-commit traceability so every AI-generated design document is verified against its origin before reaching developers, catching unsupported content before it causes downstream rework.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>ClickHouse</span><span>OpenSearch</span><span>AI-DD Tooling</span><span>NestJS</span>
+        </div>
+      </article>
+
+      <article class="card exp-card">
+        <div class="exp-top">
+          <span class="date-pill">05/2023 &ndash; 07/2025</span>
+        </div>
+        <h3 class="exp-role">Full-Stack Software Engineer</h3>
+        <span class="exp-company"><svg viewBox="0 0 24 24" class="row-ico-sm"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Fenik Technologies</span>
+        <p class="exp-desc">
+          Developed backend services for a dental-clinic discovery and review platform serving
+          100,000+ monthly visits, with a focus on search performance and query optimization.
+        </p>
+        <div class="tag-list tag-list-sm">
+          <span class="tag tag-accent">Dental Platform</span>
+          <span class="tag tag-accent">Full-text Search</span>
+          <span class="tag tag-accent">Query Optimization</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Designed a high-performance full-text search API using PostgreSQL's native search (tsvector + GIN index) with custom relevance ranking, cutting search response times by over 10x.</li>
+          <li>Refactored the clinic classification API by partitioning the table by region and optimizing SQL queries, reducing execution time from ~600ms to ~40ms.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>PostgreSQL</span><span>tsvector / GIN</span><span>SQL Tuning</span><span>NestJS</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section container" id="projects">
+    <h2 class="section-title">Personal Projects</h2>
+    <p class="section-sub">Built &amp; shipped on my own time</p>
+
+    <div class="projects-grid">
+      <article class="card project-card">
+        <div class="exp-top">
+          <span class="date-pill">2024 &ndash; Present</span>
+          <span class="badge badge-current"><i class="dot dot-green"></i>Active</span>
+        </div>
+        <h3 class="exp-role">Litmatch</h3>
+        <p class="exp-desc">
+          Solo-designed and built an anonymous social-entertainment platform &mdash; matching,
+          voice/text chat, feed, mini-games, and a diamond/VIP economy &mdash; with a Next.js web
+          client, a Vite/React admin console, and a NestJS modular-monolith core API across
+          20+ modules.
+        </p>
+        <ul class="bullet-list">
+          <li>NestJS modular-monolith core API (Socket.IO gateway, LiveKit SFU) powering both a Next.js web client and a Vite/React admin console.</li>
+          <li>Built both frontends &mdash; a Next.js App Router web client (Server Components by default, TanStack Query, socket.io-client, livekit-client) and a Vite/React admin SPA (React Router, React Hook Form + Zod, shadcn/ui, Tailwind CSS) &mdash; both consuming a single typed REST client generated from the OpenAPI spec.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>NestJS</span><span>Next.js</span><span>Vite/React</span><span>Socket.IO</span><span>LiveKit</span><span>Tailwind CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ducmanh001/litmatch" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9a4.8 4.8 0 0 0-1 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8 19c-3 .9-3-1.5-4.2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+            GitHub
+          </a>
+          <a href="https://litmatch-web.manhphan110801.workers.dev/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="exp-top">
+          <span class="date-pill">2025 &ndash; Present</span>
+          <span class="badge badge-current"><i class="dot dot-green"></i>Active</span>
+        </div>
+        <h3 class="exp-role">Mini Shop API</h3>
+        <p class="exp-desc">
+          Solo-built a NestJS/TypeScript e-commerce backend covering auth, products, cart,
+          checkout, orders, reviews, and admin management.
+        </p>
+        <ul class="bullet-list">
+          <li>PostgreSQL/TypeORM migrations with Bull-queued email notifications; deployed to Railway with Docker and CI.</li>
+          <li>Implemented transactional checkout with ordered row locks to reduce deadlock risk and idempotency keys to prevent duplicate order creation on retries.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>NestJS</span><span>TypeORM</span><span>PostgreSQL</span><span>Bull</span><span>Railway</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ducmanh001/mini-shop-api" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9a4.8 4.8 0 0 0-1 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8 19c-3 .9-3-1.5-4.2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+            GitHub
+          </a>
+          <a href="https://mini-shop-api-production-e25a.up.railway.app/api-docs" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            API Docs
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section container" id="education">
+    <h2 class="section-title">Education</h2>
+    <p class="section-sub">Where it started</p>
+
+    <div class="card education-card">
+      <div class="edu-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="edu-body">
+        <div class="exp-top">
+          <span class="date-pill">09/2020 &ndash; 02/2023</span>
+        </div>
+        <h3 class="exp-role">FPT Polytechnic</h3>
+        <span class="exp-company">Web Programming</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section container" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Open to full-stack engineering opportunities</p>
+
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="card info-mini-card">
+          <span class="row-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div>
+            <span class="mini-label">EMAIL</span>
+            <a href="mailto:manhphan110801@gmail.com">manhphan110801@gmail.com</a>
+          </div>
+          <span aria-hidden="true" class="row-arrow">&rarr;</span>
+        </div>
+        <div class="card info-mini-card">
+          <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div>
+            <span class="mini-label">PHONE</span>
+            <a href="tel:+84845012095">0845 012 095</a>
+          </div>
+          <span aria-hidden="true" class="row-arrow">&rarr;</span>
+        </div>
+        <div class="card info-mini-card">
+          <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <div>
+            <span class="mini-label">LOCATION</span>
+            <strong>Ha Noi, Vietnam</strong>
+          </div>
+        </div>
+        <div class="card info-mini-card">
+          <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z" fill="currentColor"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg></span>
+          <div>
+            <span class="mini-label">LINKEDIN</span>
+            <a href="https://www.linkedin.com/in/phan-manh-34a107269/" target="_blank" rel="noopener">phan-manh</a>
+          </div>
+          <span aria-hidden="true" class="row-arrow">&rarr;</span>
+        </div>
+      </div>
+
+      <form class="card contact-form" id="contact-form">
+        <label class="form-field">
+          <span><i class="field-num">01</i>YOUR NAME</span>
+          <input type="text" name="name" placeholder="Jane Doe" required />
+        </label>
+        <label class="form-field">
+          <span><i class="field-num">02</i>YOUR EMAIL</span>
+          <input type="email" name="email" placeholder="jane@example.com" required />
+        </label>
+        <label class="form-field">
+          <span><i class="field-num">03</i>YOUR MESSAGE</span>
+          <textarea name="message" rows="5" placeholder="// Tell me about your project..." required></textarea>
+        </label>
+        <button class="btn btn-primary btn-block" type="submit">Send Message <span aria-hidden="true">&rarr;</span></button>
+        <p class="form-hint">Opens your email app with this message pre-filled &mdash; no server involved.</p>
+      </form>
+    </div>
+
+    <div class="social-strip">
+      <a class="social-strip-item" href="https://www.linkedin.com/in/phan-manh-34a107269/" target="_blank" rel="noopener">
+        <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z" fill="currentColor"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg></span>
+        <span>/LINKEDIN<strong>LinkedIn</strong></span>
+        <span aria-hidden="true" class="row-arrow">&rarr;</span>
+      </a>
+      <a class="social-strip-item" href="https://github.com/ducmanh001" target="_blank" rel="noopener">
+        <span class="row-ico"><svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 1.8a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.3 3.5 6.5 6.8 6.9a4.8 4.8 0 0 0-1 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8 19c-3 .9-3-1.5-4.2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>
+        <span>/GITHUB<strong>GitHub</strong></span>
+        <span aria-hidden="true" class="row-arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <span class="brand-avatar footer-avatar">M</span>
+        <div>
+          <strong>Phan Van Manh</strong>
+          <span class="footer-role">FULL-STACK DEVELOPER &middot; {YEAR}</span>
+        </div>
+      </div>
+      <a href="mailto:manhphan110801@gmail.com" class="footer-email">manhphan110801@gmail.com <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-col-title">QUICK NAV</span>
+      <a href="#home">00 Home</a>
+      <a href="#about">01 About</a>
+      <a href="#skills">02 Skills</a>
+      <a href="#experience">03 Experience</a>
+      <a href="#projects">04 Projects</a>
+      <a href="#education">05 Education</a>
+      <a href="#contact">06 Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-col-title">BUILT WITH</span>
+      <div class="footer-tags">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+      </div>
+      <span class="footer-note">BUILT WITH CARE &middot; <span id="footer-year">2026</span></span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
