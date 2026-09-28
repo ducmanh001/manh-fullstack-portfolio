@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phan Van Manh - Full-Stack CV</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.2in 0.5in;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 10.2pt;
+    line-height: 1.13;
+    color: #000;
+  }
+  a { color: #000; text-decoration: none; }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .header-row .name {
+    font-weight: bold;
+    font-size: 14.5pt;
+  }
+  .header-row .role {
+    font-style: italic;
+  }
+  .header-rule {
+    border: none;
+    border-top: 1.1pt solid #000;
+    margin: 5px 0 1px 0;
+  }
+
+  .section-title {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 12.5pt;
+    letter-spacing: 0.3px;
+    border-bottom: 1pt solid #000;
+    padding-bottom: 1px;
+    margin: 6px 0 3px 0;
+  }
+
+  .plain-line { margin: 1px 0; }
+  .plain-line b { font-weight: bold; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  .entry-sub {
+    font-style: italic;
+    margin: 0 0 1px 0;
+  }
+  .entry-link {
+    font-style: italic;
+    margin: 0 0 1px 0;
+    font-size: 9.2pt;
+  }
+
+  ul.bullets {
+    list-style-type: "\25E6\0020";
+    margin: 1px 0 4px 0;
+    padding-left: 18px;
+  }
+  ul.bullets li {
+    margin-bottom: 0.5px;
+    padding-left: 2px;
+    text-align: justify;
+  }
+  ul.bullets.nested {
+    margin: 1px 0 3px 0;
+  }
+
+  .summary-text {
+    margin: 1px 0 3px 0;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  @media screen {
+    body {
+      max-width: 1190px;
+      margin: 0 auto;
+      padding: 40px 56px;
+      background: #fff;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="header-row">
+    <span class="name">Phan Van Manh</span>
+    <span>Mobile: 0845 012 095</span>
+  </div>
+  <div class="header-row">
+    <span class="role">Full-Stack Software Engineer</span>
+    <span>Email: manhphan110801@gmail.com</span>
+  </div>
+  <div class="header-row">
+    <span>LinkedIn: <a href="https://www.linkedin.com/in/phan-manh-34a107269">https://www.linkedin.com/in/phan-manh-34a107269</a></span>
+    <span>GitHub: <a href="https://github.com/ducmanh001">https://github.com/ducmanh001</a></span>
+  </div>
+  <div class="header-row">
+    <span>Website: <a href="https://ducmanh001.github.io/manh-fullstack-portfolio">https://ducmanh001.github.io/manh-fullstack-portfolio</a></span>
+    <span>Location: Ha Noi</span>
+  </div>
+  <hr class="header-rule">
+
+  <div class="section-title">Summary</div>
+  <p class="summary-text">Full-Stack Software Engineer with over 3 years of experience building NestJS APIs and React/Next.js
+  interfaces. Built a real-time voice-call app and admin console around a shared OpenAPI-generated client,
+  redesigned an analytics pipeline over 300M+ survey records for consistent 1-2s aggregations, and cut a
+  clinic-classification SQL query from ~600ms to ~40ms.</p>
+
+  <div class="section-title">Technical Skills</div>
+  <p class="plain-line"><b>Languages</b>: JavaScript, TypeScript</p>
+  <p class="plain-line"><b>Frontend</b>: React, Next.js, React Router, Vite; TanStack Query, Zustand, React Hook Form, Zod; Ant Design, shadcn/ui, Tailwind CSS; Socket.IO, WebRTC (LiveKit)</p>
+  <p class="plain-line"><b>Backend</b>: Node.js, NestJS</p>
+  <p class="plain-line"><b>Data</b>: PostgreSQL, ClickHouse, OpenSearch, MongoDB, Redis; Prisma, TypeORM</p>
+  <p class="plain-line"><b>Messaging &amp; APIs</b>: BullMQ, Kafka; REST, gRPC, WebSocket</p>
+  <p class="plain-line"><b>Testing</b>: Jest, Supertest, Cypress, Playwright</p>
+  <p class="plain-line"><b>Delivery</b>: Docker, CI/CD on DigitalOcean</p>
+  <p class="plain-line"><b>Process</b>: Agile/Scrum, TDD, AI-Driven Development (AI-DD)</p>
+  <p class="plain-line"><b>Principles</b>: OOP, SOLID, DRY, KISS, YAGNI, Design Patterns</p>
+  <p class="plain-line"><b>Architecture</b>: Clean/Layered Architecture, Modular Monolith, Microservices, DDD, CQRS, Event-driven Design</p>
+
+  <div class="section-title">Experience</div>
+
+  <div class="entry-header">
+    <span>Sun Asterisk</span>
+    <span>Jul 2025 - Present</span>
+  </div>
+  <div class="entry-sub">Backend Software Engineer</div>
+  <ul class="bullets">
+    <li>Proposed and led a rebuild of the respondent-analytics module for a Japanese client: replaced OpenSearch parent-child aggregation queries on a single unpartitioned index with a ClickHouse columnar table partitioned by year, validated against a 300M+ row production copy spanning 50+ years of survey data, where it eliminated recurring query timeouts and cut typical aggregation latency to a consistent 1-2s.</li>
+    <li>Adapted an internal AI-assisted delivery workflow (AI-DD) for a Japanese client, adding source-commit traceability so AI-generated design docs are verified against their origin before reaching developers, catching unsupported content before downstream rework.</li>
+  </ul>
+
+  <div class="entry-header">
+    <span>Fenik Technologies</span>
+    <span>May 2023 - Jul 2025</span>
+  </div>
+  <div class="entry-sub">Full-Stack Software Engineer</div>
+  <ul class="bullets">
+    <li>Developed and maintained features for a dental-clinic discovery and review platform serving 100,000+ monthly visits.</li>
+    <li>Designed and implemented a high-performance full-text search API using PostgreSQL's native full-text search (tsvector + GIN index) with custom relevance ranking, avoiding the cost and operational overhead of a dedicated search engine for the platform's data scale, cutting search response times by over 10x.</li>
+    <li>Refactored the clinic classification API by partitioning the table by region and optimizing SQL queries, reducing query execution time from ~600ms to ~40ms.</li>
+  </ul>
+
+  <div class="section-title">Personal Projects</div>
+  <div class="entry-header">
+    <span>Litmatch</span>
+    <span>2024 - Present</span>
+  </div>
+  <div class="entry-link">GitHub: <a href="https://github.com/ducmanh001/litmatch">https://github.com/ducmanh001/litmatch</a> &nbsp;|&nbsp; Demo: <a href="https://litmatch-web.manhphan110801.workers.dev">https://litmatch-web.manhphan110801.workers.dev</a></div>
+  <ul class="bullets">
+    <li>Solo-designed and built Litmatch - an anonymous social-entertainment platform (matching, voice/text chat, feed, mini-games, diamond/VIP economy) - as a Next.js web client, a Vite/React admin console, and a NestJS modular-monolith core API across 20+ modules, both frontends sharing a single typed REST client generated from the OpenAPI spec.</li>
+    <li>Built the voice-match call flow end-to-end: REST join mints a LiveKit token per match session, a React hook connects the room client-side guarded by a generation counter against stale reconnects, and Socket.IO delivers real-time call-ended events with REST poll as fallback.</li>
+  </ul>
+
+  <div class="entry-header">
+    <span>Mini Shop API</span>
+    <span>2025 - Present</span>
+  </div>
+  <div class="entry-link">GitHub: <a href="https://github.com/ducmanh001/mini-shop-api">https://github.com/ducmanh001/mini-shop-api</a> &nbsp;|&nbsp; Demo: <a href="https://mini-shop-api-production-e25a.up.railway.app/api-docs">https://mini-shop-api-production-e25a.up.railway.app/api-docs</a></div>
+  <ul class="bullets">
+    <li>Solo-built a NestJS/TypeScript e-commerce backend (auth, products, cart, checkout, orders, reviews, admin) with PostgreSQL/TypeORM migrations and Bull-queued email notifications; transactional checkout uses ordered row locks and idempotency keys to prevent duplicate orders. Deployed to Railway with Docker and CI.</li>
+  </ul>
+
+  <div class="section-title">Education</div>
+  <div class="entry-header">
+    <span>FPT Polytechnic</span>
+    <span>Sep 2020 - Feb 2023</span>
+  </div>
+  <div class="entry-sub">Web Programming</div>
+
+</body>
+</html>
